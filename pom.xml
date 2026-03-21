@@ -52,7 +52,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.3.0</version>
+                <version>3.1.0</version>
                 <configuration>
                     <archive>
                         <manifest>
@@ -61,9 +61,13 @@
                     </archive>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
-
+<distributionManagement>
+        <repository>
+            <id>nexus-releases</id> <!-- Match this ID with the settings.xml -->
+            <url>http://13.222.238.87:8081/repository/java-packages/</url>
+        </repository>
+    </distributionManagement>
 </project>
 
