@@ -63,11 +63,5 @@
             </plugin>
         </plugins>
     </build>
-<distributionManagement>
-        <repository>
-            <id>nexus-releases</id> <!-- Match this ID with the settings.xml -->
-            <url>http://3.95.189.88:8081/repository/maven-packages/</url>
-        </repository>
-    </distributionManagement>
 </project>
 
